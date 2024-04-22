@@ -34,5 +34,5 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64,linux/arm/v7,linux/arm/v6,linux/arm/v5
           push: true
-          file: ./Dockerfile.for-sqlite
+          file: ./docker/Dockerfile.for-sqlite
           tags: "${{ env.REGISTRY_IMAGE }}:${{  github.ref_name }}-sqlite"
