@@ -1,2 +1,3 @@
-# docker-wp-api
+# Docker WP API
+
 WordPress callable by API.
