@@ -14,5 +14,5 @@ RUN curl -L -o "wp-cli.phar" https://raw.githubusercontent.com/wp-cli/builds/gh-
     mv wp-cli.phar /usr/local/bin/wp
 
 # WP REST API
-RUN echo "\n\n# Enable WP REST API, by @soulteary\n" >> /usr/src/wordpress/wp-config-docker.php
-RUN echo "if ( ! defined( 'REST_REQUEST' ) ) { define('REST_REQUEST', true) }\n" >> /usr/src/wordpress/wp-config-docker.php
+RUN echo "# Enable WP REST API, by @soulteary" >> /usr/src/wordpress/wp-config-docker.php
+RUN echo "if ( ! defined( 'REST_REQUEST' ) ) { define('REST_REQUEST', true); }" >> /usr/src/wordpress/wp-config-docker.php
